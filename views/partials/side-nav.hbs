@@ -8,7 +8,7 @@
                     <img class="round-img user-pic" src="/img/user.svg">
                 {{/if}}
             </div>
-            <div class="card">
+            <div class="card" style="padding-bottom:5vh; margin-bottom: 3vh">
                 {{#if userName}}
                     <p>Hi, {{userName}}</p>
                 {{else}}
@@ -20,26 +20,27 @@
     </a>
 
     <div>
-      <div class="flex-row">
+      <div class="flex-row" style="padding-top: 2vh; padding-bottom: 2vh">
         <a href="/users/me"><span class="pointer {{#ifeq  val=currentUrl expected="users"}}red{{/ifeq}}">MY PROFILE</span></a>
       </div>
       <div class="separator"></div>
-      <div class="flex-row">
+      <div class="flex-row" style="padding-top: 2vh; padding-bottom: 2vh">
         <a href="/address/"><span class="pointer {{#ifeq  val=currentUrl expected="address"}}red{{/ifeq}}">MY ADDRESSES</span></a>
       </div>
-      <div class="flex-row">
+      <div class="separator"></div>
+      <div class="flex-row" style="padding-top: 2vh; padding-bottom: 2vh">
         <a href="/users/me/organisations"><span class="pointer {{#ifeq  val=currentUrl expected="organisations"}}red{{/ifeq}}">MY ORGANISATIONS</span></a>
       </div>
       <div class="separator"></div>
-      <div class="flex-row">
+      <div class="flex-row" style="padding-top: 2vh; padding-bottom: 2vh">
         <a href="/apps"><span class="pointer {{#ifeq  val=currentUrl expected="apps"}}red{{/ifeq}}">MY APPS</span></a>
       </div>
       <div class="separator"></div>
-      <div class="flex-row">
+      <div class="flex-row" style="padding-top: 2vh; padding-bottom: 2vh">
         <a href="/users/me/clients"><span class="pointer {{#ifeq  val=currentUrl expected="clients"}}red{{/ifeq}}">MY CLIENTS</span></a>
       </div>
       <div class="separator"></div>
-      <div class="flex-row faded">
+      <div class="flex-row faded" style="padding-top: 2vh; padding-bottom: 2vh">
         <a href="/logout"><span class="pointer">LOGOUT</span></a>
       </div>
     </div>
